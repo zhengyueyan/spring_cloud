@@ -1,0 +1,11 @@
+server:
+  port: 8763
+
+eureka:
+  client:
+    service-url:
+      default_zone : http://172.16.1.204:8761/eureka
+
+spring:
+  application:
+    name: service-hi
