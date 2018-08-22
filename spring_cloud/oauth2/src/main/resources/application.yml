@@ -1,0 +1,36 @@
+security:
+  oauth2:
+    client:
+      client-id: zyy
+      client-secret: zyy
+server:
+  port: 9090
+  session:
+    timeout: 60
+spring:
+  session:
+    store-type: redis
+
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+
+#logging:
+#  pattern:
+#    level: debug
+
+logging:
+  level: debug
+
+zyy:
+  security:
+    oauth2:
+      storeType: jwt
+      jwtSigningKey: zyy
+      clients[0]:
+        clientId: zyy
+        clientSecret: zyy
+      clients[1]:
+              clientId: zyy1
+              clientSecret: zyy1
